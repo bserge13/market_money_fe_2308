@@ -1,8 +1,8 @@
 <h1><%= @vendor.name %></h1>
 <br>
 
-<h3> Contact info: </h3>
-<p>Name: <%= @vendor.contact_name %><p>
+<p> Contact Info: </p>
+<p>Name: <%= @vendor.contact_name %></p>
 <p>Phone: <%= @vendor.contact_phone %></p>
-<p>Credit Accepted?: <%= @vendor.credit_accepted %></p>
+<p>Credit Accepted?: <%= @vendor.credit_accepted ? 'YES' : 'NO' %></p>
 <p>Description: <%= @vendor.description %></p>

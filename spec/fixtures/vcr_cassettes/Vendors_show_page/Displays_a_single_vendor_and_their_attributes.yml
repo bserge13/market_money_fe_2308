@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v0/vendors/55391
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.12
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"e089415eed9d7104c76c589ebd259266"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - d8bcfa04-818a-4b21-9570-6d5d28f5c0c0
+      X-Runtime:
+      - '0.076773'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.11, sql.active_record;dur=8.14, instantiation.active_record;dur=0.07,
+        process_action.action_controller;dur=31.90
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"55391","type":"vendor","attributes":{"name":"Roast \u0026
+        Toast","description":"Freshly roasted nuts and coffee blends","contact_name":"Bryan
+        Wolff","contact_phone":"1-176-664-1200","credit_accepted":true}}}'
+  recorded_at: Thu, 14 Dec 2023 02:02:37 GMT
+recorded_with: VCR 6.2.0
