@@ -9,7 +9,7 @@ RSpec.describe 'Markets show page' do
     expect(page).to have_content('47632')
   end
 
-  it 'displays the markets vendors as links' do 
+  it 'displays the markets vendors as links', :vcr do 
     visit market_path(325933)
 
     within('#vendors') do

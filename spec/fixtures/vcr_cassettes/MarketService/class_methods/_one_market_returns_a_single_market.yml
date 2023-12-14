@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v0/markets/325933
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.12
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"850b733be40abf2bb6b89dea59026669"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 1f153e17-1eff-485a-b232-c075d63171f0
+      X-Runtime:
+      - '0.047760'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.11, sql.active_record;dur=7.97, instantiation.active_record;dur=0.11,
+        process_action.action_controller;dur=41.75
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"325933","type":"market","attributes":{"name":"Henry
+        County Farmers Market","street":"100 block of S Main Street","city":"New Castle","county":"Henry","state":"Indiana","zip":"47632","lat":"39.9705","lon":"-85.355","vendor_count":13}}}'
+  recorded_at: Thu, 14 Dec 2023 23:41:15 GMT
+recorded_with: VCR 6.2.0

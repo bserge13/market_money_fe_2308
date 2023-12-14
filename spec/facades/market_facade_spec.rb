@@ -14,7 +14,7 @@ RSpec.describe MarketFacade do
   end 
 
   describe '#get_market' do 
-    it 'returns a Market object' do 
+    it 'returns a Market object', :vcr do 
       market = MarketFacade.get_market(325933)
 
       expect(market).to be_a Market
